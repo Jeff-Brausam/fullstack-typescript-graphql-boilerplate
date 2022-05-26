@@ -1,6 +1,6 @@
 ## Fullstack React Typescript GraphQL Boilerplate
 
-Fullstack React application with Typescript and GraphQL. MSW for mock testing.
+Fullstack React application with Typescript and GraphQL. MSW for testing with mocks with React.
 
 ### Setup
 
@@ -18,7 +18,7 @@ yarn start
 
 ### Testing
 
-For testing with the frontend I am using MSW. This is able to mock your server and act as a service worker on the client side giving you mocked data.
+For testing with the frontend this project is using MSW. This is able to mock your server and act as a service worker on the client side giving you mocked data.
 
 If you are working in the client directory run
 
