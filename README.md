@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+## Fullstack React Typescript GraphQL Boilerplate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fullstack React application with Typescript and GraphQL. MSW for mock testing.
 
-## Available Scripts
+### Setup
 
-In the project directory, you can run:
+1. Install the dependencies with
 
-### `npm start`
+```
+yarn
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Start the application with
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+yarn start
+```
 
-### `npm test`
+### Testing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For testing with the frontend I am using MSW. This is able to mock your server and act as a service worker on the client side giving you mocked data.
 
-### `npm run build`
+If you are working in the client directory run
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+yarn start-msw
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To begin testing run
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+yarn test
+```
 
-### `npm run eject`
+### Things to know
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Adding dependencies with lerna
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+When you want to add a dependency to the server or client, run lerna add <package name> <directory installing into>. For example: lerna add jest server.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Updating types with codegen
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Anytime you create or update a resolver, graphql, or a mutation, you should update it with codegen on both the server and clientside. On the server side: After editing run:
 
-## Learn More
+```
+cd ../server
+yarn codegen
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+On the client side run:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+cd ../client
+yarn codegen
+```
+
+You will not be able to use your query or mutation until after the gql tag is created/updated either on the client side so do that first before running it.
+
+Sometimes typescript in your IDE will break after that (known bug). If that happens just restart typescript or your IDE. If you are using VS-Code just press CMD + Shift + P and enter 'Typescript restart'
+
+#### LowDb
+
+LowDB is a lightweight database. If you are looking for scalability, switch to a better database like Mongodb or PostgreSQL. It is only used on this project because it is quick and easy to setup.

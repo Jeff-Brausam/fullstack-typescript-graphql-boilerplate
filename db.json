@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "name": "Jane Doe",
+      "avatarUrl": "http://localhost:3000/static/jane-doe.jpeg",
+      "createdAt": "2022-05-24T19:23:24.919Z",
+      "updatedAt": "2022-05-24T19:23:24.919Z",
+      "id": "user-1e45618d-4690-400e-b765-e1619e9c55de"
+    },
+    {
+      "name": "Michael Cloudman",
+      "avatarUrl": "http://localhost:3000/static/michael-cloudman.png",
+      "createdAt": "2022-05-24T19:23:24.920Z",
+      "updatedAt": "2022-05-24T20:53:00.255Z",
+      "id": "user-d3b10b7d-f57e-4073-a887-85b775cd8ee3"
+    },
+    {
+      "name": "Sara Berginni",
+      "avatarUrl": "http://localhost:3000/static/sara-berginni.png",
+      "createdAt": "2022-05-24T19:23:24.920Z",
+      "updatedAt": "2022-05-24T19:23:24.920Z",
+      "id": "user-0ef70aa2-3f33-4198-95ac-b807813a7070"
+    },
+    {
+      "name": "Zoe Geralds",
+      "avatarUrl": "http://localhost:3000/static/1zoe.jpeg",
+      "createdAt": "2022-05-24T19:23:24.921Z",
+      "updatedAt": "2022-05-24T19:23:24.921Z",
+      "id": "user-e0724e83-8ccd-4bd6-86cf-d78ca45e059e"
+    },
+    {
+      "name": "Chad Reynolds",
+      "avatarUrl": "http://localhost:3000/static/chad_reynolds.png",
+      "createdAt": "2022-05-24T19:23:24.921Z",
+      "updatedAt": "2022-05-24T19:23:24.921Z",
+      "id": "user-e047939a-9156-423a-bfb5-837f5d8faafd"
+    }
+  ]
+}

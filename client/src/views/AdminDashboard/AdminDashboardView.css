@@ -1,0 +1,44 @@
+.Container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.UsersListContainer {
+  width: 75%;
+  background-color: rgb(244, 244, 244);
+}
+
+.ActionsContainer {
+  width: 25%;
+  background-color: rgb(50, 187, 107);
+}
+
+h3 {
+  width: 100%;
+}
+
+button {
+  width: 80%;
+  padding: 1rem;
+  outline: none;
+  color: white;
+  background-color: blue;
+  border: none;
+  font-size: medium;
+  margin-bottom: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
+  box-sizing: border-box;
+  width: 80%;
+  padding: 1rem;
+}
+
+ul {
+  background-color: white;
+}

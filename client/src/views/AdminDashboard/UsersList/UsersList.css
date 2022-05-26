@@ -1,0 +1,26 @@
+.UserList {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+.UserName {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.UserId {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  margin: 0;
+  padding: 1rem;
+}
+li {
+  list-style-type: none;
+}
